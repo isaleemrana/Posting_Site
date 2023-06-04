@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Page</title>
+    <!-- <link rel="stylesheet" href="Css/style.css/"> -->
+    
+    <style>
+        body{
+            background-image: url('img.jpeg');
+           
+            background-repeat: no-repeat;
+            background-size: 100% 660px;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 60px;
+            /* background-color: #f8f8f8; */
+            padding: 0 20px;
+            }
+
+            .navbar-logo img {
+                width: 100px;
+                height: 40px;
+                padding-right: 1px;
+                margin-top: 25px;
+            }
+
+            .navbar-menu {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            }
+
+            .navbar-menu li {
+            margin: 0 10px;
+            transition: 0.5 ease;
+            }
+
+            .navbar-menu li a {
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        ul li a:hover{
+    background-color: #fff;
+    cursor: pointer;
+    color: wheat;
+        }
+        ul li{
+            font-size: large;
+            border: 3px solid white;
+            
+        }
+
+       
+    </style>
+</head>
+<body>
+    <!-- <img src="img.jpeg" alt="img" width="100%" height="600px" class="img"> -->
+   
+    <nav class="navbar">
+        <div class="navbar-logo">
+          <a href="#"><img src="logo1.png" width="100px" height="100px" alt="Logo"></a>
+        </div>
+        
+        <ul class="navbar-menu">
+          <li style="font-weight: bold;"><a id="home" href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <script src="Dom.js"></script>   
+</body>
+</html>
